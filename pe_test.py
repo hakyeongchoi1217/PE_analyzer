@@ -15,3 +15,5 @@ for section in pe.sections:
     size = section.SizeOfRawData
     entropy = section.get_entropy()
     print(f"  {name:8} VA: 0x{va:08x}  Size: {size}  Entropy: {entropy:.2f}")
+
+
