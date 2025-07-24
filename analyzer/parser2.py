@@ -9,8 +9,8 @@ def print_dos_header(path):
 def print_nt_header(path):
     pe = pefile.PE(path)
     print("=======  NT HEADER  =======")
-    print(f"Signature : {hex.(pe.NT_HEADERS.Signature)}")
-    print(f"Machin : {hex.(pe.FILE_HEADER.Machine)}")
+    print(f"Signature : {hex(pe.NT_HEADERS.Signature)}")
+    print(f"Machin : {hex(pe.FILE_HEADER.Machine)}")
     print(f"NumberOfSections : {pe.FILE_HEADER.NumberOfSections}")
     print(f"TimeDataStamp : {hex(pe.FILE_HEADER.TimeDataStamp)}")
 
