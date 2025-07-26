@@ -52,8 +52,10 @@ def end_or_again():
         print("잘못된 입력값")    
 
 def main():
+    start()
+
     if len(sys.argv) != 2:
-        print("사용법 : python main.py <분석할 파일 경로>")
+        print("사용법 : python main2.py <분석할 파일 경로>")
         return 
     
     filepath = sys.argv[1]
